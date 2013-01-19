@@ -1,0 +1,31 @@
+style "mate-panel" {
+	fg[NORMAL]			= "#232323"
+	fg[PRELIGHT]		= "#444444"
+	fg[ACTIVE]			= "#FFFFFF"
+	fg[SELECTED]		= "#000000"
+	text[NORMAL]		= "#161616"
+	text[PRELIGHT]		= "#000000"
+	text[ACTIVE]		= "#000000"
+	text[SELECTED]		= "#ffffff"
+	text[INSENSITIVE]	= "#8A857C"
+
+	engine "pixmap" {
+		image {
+			function		= BOX
+			recolorable		= TRUE
+			state			= PRELIGHT
+			file			= "Panel/panel-button-hover.png"
+			border			= { 4, 4, 1, 1 }
+			stretch			= TRUE
+		}
+	}
+}
+
+widget			"*PanelWidget*"	style	"mate-panel"
+widget			"*PanelApplet*"	style	"mate-panel"
+class			"*Panel*"		style	"mate-panel"
+widget_class	"*Mail*"		style	"mate-panel"
+class			"*notif*"		style	"mate-panel"
+class			"*Notif*"		style	"mate-panel"
+class			"*Tray*"		style	"mate-panel"
+class			"*tray*"		style	"mate-panel"

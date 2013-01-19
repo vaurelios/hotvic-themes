@@ -1,0 +1,38 @@
+@define-color notebook_tab_gradient_b shade (@bg_color, 0.98);
+
+PlumaWindow .pane-separator,
+PlumaWindow .pane-separator:hover {
+}
+
+PlumaPanel.title GtkLabel {
+}
+
+PlumaPanel .toolbar {
+	border-style: none;
+	background-color: transparent;
+}
+
+PlumaDocumentsPanel .view {
+}
+
+PlumaWindow .notebook {
+	padding: 0px;
+	border-radius: 1px;
+	border-width: 1px 0 1px 0;
+}
+
+PlumaWindow .notebook tab.top,
+PlumaWindow .notebook tab.bottom {
+	border-right-width: 1px;
+	border-left-width: 1px;
+}
+
+PlumaPanel .notebook {
+	padding: 3px;
+	border-radius: 1px;
+}
+
+PlumaPanel .notebook tab,
+PlumaWindow .notebook tab {
+	border-radius: 3px;
+}
